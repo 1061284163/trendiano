@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/clearfloat.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/details.css" />
+    <style>
+      .top-float-frame {
+        width: 40px;
+        position: fixed;
+        right: 35px;
+        bottom: 0;
+      }
+      .top-float-frame .gotop {
+        display: none;
+        box-sizing: content-box;
+        width: 34px;
+        height: 30px;
+        background-color: #1a1a1a;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 3px;
+        font-family: Times New Roman;
+        cursor: pointer;
+        color: #fff;
+        text-align: center;
+      }
+      .top-float-frame .gotop:hover {
+        background-color: #000;
+      }
+      .top-float-frame a {
+        line-height: 16px;
+        padding: 3px;
+        font-family: Times New Roman;
+        background: #c9a063;
+        display: block;
+        cursor: pointer;
+        font-family: arial;
+        text-align: center;
+        color: #fff;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <div class="container">
+          <div class="row menu">
+            <div class="col-lg-8"></div>
+            <div class="col-lg-4">
+              <div class="top-link-box clearfix">
+                <span class="paramLogin">
+                  <a href="login.html">登录</a><a href="">注册</a>
+                </span>
+                <span class="my">
+                  <a href="">我的账户</a>
+                  <a href="">我的收藏</a>
+                  <a href="shopping-car.html">购物袋[0]</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="row top-mid">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2">
+              <h1 class="logo">
+                <a href=""></a>
+              </h1>
+            </div>
+            <div class="col-lg-5">
+              <div class="search clearfix">
+                <button></button
+                ><input type="text" value="搜索您感兴趣的内容" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="clearfix">
+                <li>
+                  <a href="">首页</a>
+                </li>
+                <li>
+                  <a href="">品牌动向</a>
+                </li>
+                <li>
+                  <a href="">新品咨询</a>
+                </li>
+                <li>
+                  <a href="">春夏大减价<span></span></a>
+                  <div class="sub-menu">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="sub-menu-cont clearfix">
+                            <h3>BIG SALE</h3>
+                            <span>
+                              <a href="">5.29主推款</a>
+                              <a href="">6.11主推款</a>
+                              <a href="">7折专区</a>
+                              <a href="">8折专区</a>
+                            </span>
+                            <span><a href="">9折专区</a></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">到店新品<span></span></a>
+                  <div class="sub-menu">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="sub-menu-cont clearfix">
+                            <h3>NEW IN</h3>
+                            <span>
+                              <a href="">5月14号到店</a>
+                              <a href="">4月30号到店</a>
+                              <a href="">4月16号到店</a>
+                              <a href="">全部新品</a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">跨界合作<span></span></a>
+                  <div class="sub-menu">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="sub-menu-cont clearfix">
+                            <h3>IP</h3>
+                            <span>
+                              <a href="">侏儒兔系列</a>
+                              <a href="">狮子王联名款</a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">特惠专区<span></span></a>
+                  <div class="sub-menu">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="sub-menu-cont clearfix">
+                            <h3>VIP SALE</h3>
+                            <span>
+                              <a href="">2件9折 3件8折</a>
+                              <a href="">秒杀专区</a>
+                              <a href="">新品秒杀</a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">服装<span></span></a>
+                  <div class="sub-menu">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="sub-menu-cont clearfix">
+                            <h3>NEW IN_SHANG</h3>
+                            <span>
+                              <a href="">T恤/POLO</a>
+                              <a href="">衬衫</a>
+                              <a href="">卫衣</a>
+                              <a href="">夹克</a>
+                            </span>
+                            <span>
+                              <a href="">裤装</a>
+                              <a href="">风衣</a>
+                              <a href="">针织衫</a>
+                              <a href="">皮衣</a>
+                            </span>
+                            <span>
+                              <a href="">羽绒服</a>
+                              <a href="">棉衣</a>
+                              <a href="">毛呢大衣</a>
+                              <a href="">西服</a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">鞋/配饰<span></span></a>
+                  <div class="sub-menu">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="sub-menu-cont clearfix">
+                            <h3>SHOES</h3>
+                            <span>
+                              <a href="">休闲鞋</a>
+                              <a href="">凉鞋/拖鞋</a>
+                              <a href="">包包</a>
+                              <a href="">帽</a>
+                            </span>
+                            <span>
+                              <a href="">袜</a>
+                              <a href="">其他配饰</a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><span>客服营业时间 : 9:00-18:00</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="bread">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-1"></div>
+                  <div class="col-lg-3">
+                    <div class="bread-inner clearfix">
+                      <a href=""></a>
+                      <span>></span>
+                      <em>【2件9折 3件8折】宽松连帽短袖风衣外套</em>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="main-top clearfix">
+              <div class="col-lg-1">
+                <div class="pro-smallpic-box">
+                  <div class="product-img">
+                    <img
+                      src="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_s_1.jpg"
+                      alt=""
+                      data-img="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_m_1.jpg"
+                    />
+                    <img
+                      src="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_s_2.jpg"
+                      alt=""
+                      data-img="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_m_2.jpg"
+                    />
+                    <img
+                      src="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_s_3.jpg"
+                      alt=""
+                      data-img="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_m_3.jpg"
+                    />
+                    <img
+                      src="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_s_4.jpg"
+                      alt=""
+                      data-img="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_m_4.jpg"
+                    />
+                    <img
+                      src="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_s_5.jpg"
+                      alt=""
+                      data-img="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_m_5.jpg"
+                    />
+                    <img
+                      src="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_s_6.jpg"
+                      alt=""
+                      data-img="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_m_6.jpg"
+                    />
+                    <img
+                      src="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_s_7.jpg"
+                      alt=""
+                      data-img="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_m_7.jpg"
+                    />
+                  </div>
+                  <span class="prev"></span>
+                  <span class="next"></span>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="pro-bigpic-box">
+                  <div class="product-img-show">
+                    <img
+                      src="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_m_1.jpg"
+                      alt=""
+                    />
+                    <div class="magnifier"></div>
+                  </div>
+                  <div class="product-img-big">
+                    <img
+                      src="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_b_1.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="pro-info">
+                  <div class="pro-brand">
+                    TRENDIANO
+                  </div>
+                  <h2>
+                    【2件9折 3件8折】宽松连帽短袖风衣外套
+                    <span>3RC2092100510</span>
+                  </h2>
+                  <div class="pro-price">￥899</div>
+                  <div class="pro-color">
+                    <span>颜色:</span>
+                    <a href=""
+                      ><img
+                        src="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100010/3RC2092100010_color_1.jpg"
+                        alt=""
+                    /></a>
+                    <span
+                      ><img
+                        src="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_color_1.jpg"
+                        alt=""
+                    /></span>
+                  </div>
+                  <div class="pro-size clearfix">
+                    <span>尺码：</span>
+                    <div class="groupChooseSize clearfix">
+                      <a href="javasctipt:void(0)">S</a>
+                      <a href="javasctipt:void(0)">M</a>
+                      <a href="javasctipt:void(0)">L</a>
+                      <a href="javasctipt:void(0)">XL</a>
+                      <span id="sizeInfo">尺码表</span>
+                      <span class="no-size">请选择尺码</span>
+                    </div>
+                  </div>
+                  <div class="pro-btnbox clearfix">
+                    <a href="javasctipt:void(0)">一键购买</a>
+                    <a href="javasctipt:void(0)">加入收藏</a>
+                    <a href="">联系客服</a>
+                  </div>
+                  <div class="pro-service">单笔消费满699免邮</div>
+                  <button type="button" class="add-bags">加入购物袋</button>
+                  <div class="pro-share">
+                    分享:<a href=""></a><a href=""></a>
+                  </div>
+                  <div class="sizeInfo">
+                    <div class="info-tit clearfix">尺码参考 <span></span></div>
+                    <div class="info-con">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>尺码</th>
+                            <th>衣长</th>
+                            <th>肩宽</th>
+                            <th>胸围</th>
+                            <th>袖长</th>
+                            <th>适合身高</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>S</td>
+                            <td>69</td>
+                            <td>70</td>
+                            <td>122</td>
+                            <td>24</td>
+                            <td>165</td>
+                          </tr>
+                          <tr>
+                            <td>M</td>
+                            <td>71</td>
+                            <td>72</td>
+                            <td>126</td>
+                            <td>24</td>
+                            <td>170</td>
+                          </tr>
+                          <tr>
+                            <td>L</td>
+                            <td>73</td>
+                            <td>74</td>
+                            <td>130</td>
+                            <td>24</td>
+                            <td>175</td>
+                          </tr>
+                          <tr>
+                            <td>XL</td>
+                            <td>75</td>
+                            <td>76</td>
+                            <td>133</td>
+                            <td>25</td>
+                            <td>180</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="main-mid clearfix">
+              <div class="col-lg-1"></div>
+              <div class="col-lg-11">
+                <div class="pro-description clearfix">
+                  <div class="detail-content">
+                    <p class="clearfix">
+                      <span>名称</span
+                      ><span>【2件9折 3件8折】宽松连帽短袖风衣外套</span>
+                    </p>
+                    <p class="clearfix">
+                      <span>风格</span
+                      ><span
+                        >轻薄透气风衣，可以遮阳防晒不闷热；舒适的面料，潮流的设计，刚好合身的版型，值得尝试</span
+                      >
+                    </p>
+                    <p class="clearfix">
+                      <span>纤维含量<br />小知识</span
+                      ><span
+                        >产品或产品的某一部分含有2种及以上的纤维时，除了许可不标注的纤维外，在标签上标明的每一种纤维含量允许偏差为5%，填充物的允许偏差为10%.</span
+                      >
+                    </p>
+                  </div>
+                  <div class="detail-content">
+                    <p><span>面料成分</span><span>面料:锦纶100%</span></p>
+                    <p><span>长度</span><span>常规</span></p>
+                    <p><span>版型</span><span>宽松</span></p>
+                    <p>
+                      <span>洗涤</span>
+                      <span>
+                        <img
+                          src="http://img04.taobaocdn.com/imgextra/i4/1778137875/T2KF6jXhBbXXXXXXXX_!!1778137875.png"
+                          alt=""
+                        />
+                        <img
+                          src="http://img03.taobaocdn.com/imgextra/i3/1778137875/T2.tw7XXlXXXXXXXXX_!!1778137875.png"
+                          alt=""
+                        />
+                        <img
+                          src="http://img04.taobaocdn.com/imgextra/i4/1778137875/T2Vy7MXk4aXXXXXXXX_!!1778137875.png"
+                          alt=""
+                        />
+                        <img
+                          src="http://img01.taobaocdn.com/imgextra/i1/1778137875/T2UAZ5XiJaXXXXXXXX_!!1778137875.png"
+                          alt=""
+                        />
+                        <img
+                          src="http://img04.taobaocdn.com/imgextra/i4/1778137875/T2i4xVXjXeXXXXXXXX_!!1778137875.png"
+                          alt=""
+                        />
+                        <img
+                          src="http://img01.taobaocdn.com/imgextra/i1/1778137875/T2DAI6XgxXXXXXXXXX_!!1778137875.png"
+                          alt=""
+                        />
+                        <img
+                          src="http://img04.taobaocdn.com/imgextra/i4/1778137875/T2BiE6Xi0XXXXXXXXX_!!1778137875.png"
+                          alt=""
+                        />
+                      </span>
+                    </p>
+
+                    <p>
+                      <span></span
+                      ><span
+                        >30℃以下常规机洗<br />请扣合好后与同类颜色衣物洗涤</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="main-bottom clearfix">
+              <div class="col-lg-1"></div>
+              <div class="col-lg-11">
+                <div class="viewHistory">
+                  <h5>您浏览过的商品：</h5>
+                  <ul class="pro-list clearfix">
+                    <li>
+                      <a href="">
+                        <img
+                          src="https://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_list_1.jpg"
+                          alt=""
+                        />
+                        <span>TRENDIANO</span>
+                        <span>【2件9折 3件8折】宽松连帽短袖风衣外套</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="foot-part haverightline">
+                <h3>活动日历</h3>
+                <div class="monthdate">
+                  JUNE
+                  <span>18</span>
+                </div>
+                <img
+                  src="http://img2.trendiano.com/material/2018/05/08/20180508115202738.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="foot-part haverightline havepaddingleft">
+                <h3>官方微信</h3>
+                <div class="weixin-code">
+                  <img
+                    src="http://img2.trendiano.com/rs/fiveplus/v1/res/obj/2015/02/28/weixin_code.png"
+                    alt=""
+                  />
+                </div>
+                <h3>关注微博</h3>
+                <a href="">关注@TRENDIANO官方微博</a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="foot-part havepaddingleft haverightline">
+                <h3>品牌资讯</h3>
+                <a href="">
+                  <img
+                    src="http://img2.trendiano.com/material/2020/03/05/20200305181145176.jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="foot-part havepaddingleft">
+                <h3>ABOUT US</h3>
+                <p><a href="">购物流程</a><a href="">支付方式</a></p>
+                <p><a href="">退货流程</a><a href="">配送说明</a></p>
+                <p><a href="">关于我们</a></p>
+                <div class="help">
+                  <div class="service">联系客服</div>
+                  <div class="phone">客服400-880-0086</div>
+                  <div class="return">7天无条件退货</div>
+                </div>
+                <div class="pay-methods clearfix">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="footer-bottom-inner">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-8">
+                <div class="copyright">
+                  <div class="copyright-slinks">
+                    <a href="">隐私申明</a><a href="">联系我们</a>
+                  </div>
+                  <div class="copyright-text">
+                    <p>
+                      Copyright @ 2010-2020 广州赫基信息科技有限公司版权所有
+                    </p>
+                    <a href="">粤ICP备10229258号-4</a>
+                    <a href=""
+                      ><img
+                        src="http://img2.trendiano.com/material/2016/10/31/20161031164826771.png"
+                        alt=""
+                      />粤公网安备44010602001993号</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="top-float-frame">
+      <div class="gotop">TOP</div>
+      <a href="index.html" class="gohome">返回首页</a>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+      $(".search input").focus(function () {
+        console.log("1");
+        if ($(this).val() == "搜索您感兴趣的内容") {
+          $(this).val("");
+        }
+      });
+      $(".search input").blur(function () {
+        if ($(this).val() == "") {
+          $(this).val("搜索您感兴趣的内容");
+        }
+      });
+
+      $(".nav ul li").mouseenter(function () {
+        $(this).find("a span").css("display", "block");
+        $(this).find(".sub-menu").css("display", "block");
+        $(this).find(".sub-menu").animate({ opacity: "1" }, 300);
+      });
+      $(".nav ul li").mouseleave(function () {
+        var that = $(this);
+        $(this).find("a span").css("display", "none");
+        $(this).find(".sub-menu").stop().animate({ opacity: "0" }, 200);
+        setTimeout(function () {
+          that.find(".sub-menu").css("display", "none");
+        }, 200);
+      });
+
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+          $(".top-float-frame .gotop").css("display", "block");
+        } else {
+          $(".top-float-frame .gotop").css("display", "none");
+        }
+        if ($(this).scrollTop() >= 100) {
+          $("header .nav").css({
+            position: "fixed",
+            top: "0",
+            "z-index": "1000",
+          });
+        } else {
+          $("header .nav").css({
+            position: "relative",
+            "box-shadow": "none",
+          });
+        }
+      });
+
+      $(".top-float-frame .gotop").click(function () {
+        $("html").animate({ scrollTop: "0" }, 500);
+      });
+
+      $(".pro-smallpic-box .prev").click(function () {
+        prodcutImgmarginTop =
+          $(".product-img").css("margin-top").replace("px", "") * 1;
+        if (prodcutImgmarginTop < 0)
+          $(".product-img").css("margin-top", prodcutImgmarginTop + 128);
+      });
+      $(".pro-smallpic-box .next").click(function () {
+        var imglength = $(".product-img img").length;
+        var minmarginTop = -(imglength - 5) * 128;
+        prodcutImgmarginTop =
+          $(".product-img").css("margin-top").replace("px", "") * 1;
+        if (prodcutImgmarginTop > minmarginTop) {
+          $(".product-img").css("margin-top", prodcutImgmarginTop - 128);
+        }
+      });
+      $(".pro-smallpic-box .product-img img").click(function () {
+        $(".product-img-show img").attr("src", $(this).attr("data-img"));
+        $(".product-img-big img").attr(
+          "src",
+          $(this).attr("data-img").replace("m_", "b_")
+        );
+      });
+      // 鼠标移入显示放大镜及其放大的图片
+      $(".pro-bigpic-box").mouseenter(function () {
+        $(".magnifier").css("display", "block");
+        $(".product-img-big").css("display", "block");
+      });
+      // 鼠标移出隐藏放大镜及其放大的图片
+      $(".pro-bigpic-box").mouseleave(function () {
+        $(".magnifier").css("display", "none");
+        $(".product-img-big").css("display", "none");
+      });
+      // 鼠标坐标  放大镜大小   small距离左边和顶部的距离
+      // 一直不变的值可在方法外面赋值给变量使用
+      var magnifierWidth = $(".magnifier").width();
+      var magnifierHeight = $(".magnifier").height();
+      var smallOffsetTop = $(".product-img-show").offset().top;
+      var smallOffsetLeft = $(".product-img-show").offset().left;
+      // 放大镜左移或下移的最大距离
+      var MaxmagnifierTop = $(".product-img-show").height() - magnifierHeight;
+      var MaxmagnifierLeft = $(".product-img-show").width() - magnifierWidth;
+      $(".product-img-show").mousemove(function (event) {
+        var mouseX = event.pageX;
+        var mouseY = event.pageY;
+        // 放大镜定位等于鼠标坐标 - 装放大镜的大盒small 距离浏览器边的距离 - 放大镜大小的一半
+        var magnifierLeft = mouseX - smallOffsetLeft - magnifierWidth / 2;
+        var magnifierTop = mouseY - smallOffsetTop - magnifierHeight / 2;
+        var productImgBigLeft = -2 * magnifierLeft;
+        var productImgBigTop = -2 * magnifierTop;
+        $(".magnifier").css({ left: magnifierLeft, top: magnifierTop });
+
+        //放大镜处理越界方法1
+        // 判断是否越界，若越界则重新定位
+        //实现定义好放大镜左移或下移的最大距离  若其移动超过其最大距离则越界
+        if (magnifierTop <= 0) {
+          $(".magnifier").css("top", 0);
+          productImgBigTop = 0;
+        }
+        if (magnifierTop >= MaxmagnifierTop) {
+          $(".magnifier").css("top", MaxmagnifierTop);
+          productImgBigTop = -2 * MaxmagnifierTop;
+        }
+        if (magnifierLeft <= 0) {
+          $(".magnifier").css("left", 0);
+          productImgBigLeft = 0;
+        }
+        if (magnifierLeft >= MaxmagnifierLeft) {
+          $(".magnifier").css("left", MaxmagnifierLeft);
+          productImgBigLeft = -2 * MaxmagnifierLeft;
+        }
+        // 放大镜右移则放大的图片左移，反之则相反   大图移动距离为放大镜移动距离的2倍（放大2倍）
+        $(".product-img-big img").css({
+          left: productImgBigLeft,
+          top: productImgBigTop,
+        });
+      });
+
+      var chooseSize = false;
+      $(".groupChooseSize a").hover(
+        function () {
+          $(this).css("background", "#eee");
+        },
+        function () {
+          $(this).css("background", "none");
+        }
+      );
+      $(".groupChooseSize a").click(function (event) {
+        if (chooseSize) {
+          if ($(this).css("background-color") == "rgb(0, 0, 0)") {
+            $(this).css({ background: "none", color: "#000" });
+            chooseSize = false;
+            $(".groupChooseSize a").hover(
+              function () {
+                $(this).css("background", "#eee");
+              },
+              function () {
+                $(this).css("background", "none");
+              }
+            );
+          } else {
+            $(this)
+              .css({ background: "#000", color: "#fff" })
+              .siblings("a")
+              .css({ background: "#fff", color: "#000" });
+          }
+        } else {
+          $(this)
+            .css({ background: "#000", color: "#fff" })
+            .siblings("a")
+            .css({ background: "#fff", color: "#000" });
+          chooseSize = true;
+          $(".no-size").css("display", "none");
+          $(".groupChooseSize a").unbind("mouseenter").unbind("mouseleave");
+        }
+      });
+
+      $(".pro-size .groupChooseSize #sizeInfo").click(function () {
+        $(".sizeInfo").css("display", "block");
+      });
+      $(".sizeInfo .info-tit span").click(function () {
+        $(".sizeInfo").css("display", "none");
+      });
+      $("button.add-bags").click(function () {
+        if (!chooseSize) {
+          $(".no-size").css("display", "block");
+        }
+      });
+
+      $(".pro-list li").mouseenter(function () {
+        $(this)
+          .find("img")
+          .attr(
+            "src",
+            $(this).find("img").attr("src").replace("list_1", "list_2")
+          );
+      });
+      $(".pro-list li").mouseleave(function () {
+        $(this)
+          .find("img")
+          .attr(
+            "src",
+            $(this).find("img").attr("src").replace("list_2", "list_1")
+          );
+      });
+    </script>
+  </body>
+</html>

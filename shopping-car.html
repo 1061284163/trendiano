@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/clearfloat.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/shopping-car.css" />
+    <style>
+      .top-float-frame {
+        width: 32px;
+        position: fixed;
+        right: 20px;
+        bottom: 10px;
+        z-index: 300;
+      }
+      .top-float-frame .gotop {
+        display: none;
+        box-sizing: content-box;
+        background: url("./images/icon.png") -60px -1080px no-repeat #999;
+        width: 32px;
+        height: 30px;
+        background-color: #1a1a1a;
+        opacity: 0.5;
+        font-size: 12px;
+        line-height: 1.2;
+        padding: 2px 0;
+        font-family: Times New Roman;
+        border: 0;
+        cursor: pointer;
+        color: #fff;
+        text-align: center;
+      }
+      .top-float-frame a {
+        display: block;
+        margin-top: 1px;
+        line-height: 1.2;
+        padding: 3px 0;
+        font-family: Times New Roman;
+        background-color: #bbb;
+        display: block;
+        cursor: pointer;
+        font-family: arial;
+        text-align: center;
+        color: #fff;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-float-frame">
+      <div class="gotop">TOP</div>
+      <a href="index.html" class="gohome">返回首页</a>
+      <a href="#">联系客服</a>
+    </div>
+    <div class="nochooseproduct">
+      <div class="nochooseproduct-wrap">
+        <h3>温馨提示</h3>
+        <p>没有选中的商品</p>
+        <button>确定</button>
+      </div>
+    </div>
+    <header>
+      <div class="top">
+        <a href="" class="logo">TRENDIANO</a>
+        <ul class="top-link-box">
+          <li><a href="">登录</a></li>
+          <li><a href="">注册</a></li>
+          <li><a href="">我的账户</a></li>
+          <li><a href="">我的收藏</a></li>
+          <li>
+            <a href="">购物袋(<span>5</span>)</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="checkout-step">
+            <p class="step"></p>
+            <h3>购物袋</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cart">
+            <div class="cart-tip">
+              <span class="before"></span>优惠：单笔消费，满699元免邮
+              <span class="after"></span>
+            </div>
+            <div class="cart-content">
+              <table class="mybag">
+                <thead>
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                    <th>商品名称</th>
+                    <th>颜色/尺码</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>小计</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- <tr>
+                    <td>
+                      <input type="checkbox" />
+                    </td>
+                    <td>
+                      <a href=""
+                        ><img
+                          src="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2022830018/3RC2022830018_s_1.jpg"
+                          alt=""
+                      /></a>
+                    </td>
+                    <td>
+                      <div class="pro-information">
+                        <p>TRENDIANO</p>
+                        <p>
+                          <a href="">英文标语印花短袖T恤</a>
+                        </p>
+                        <p>货号：3RC2022830018</p>
+                      </div>
+                    </td>
+                    <td class="pro-size">
+                      <a class="size" href="javascript:void(0)">白色/S</a>
+                      <div class="size-box">
+                        <h3>选择颜色及尺码</h3>
+                        <div class="rechoose-area clearfix">
+                          <div class="rechoose-item">
+                            <p>
+                              <a href=""
+                                ><img
+                                  src="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2022830018/3RC2022830018_s_1.jpg"
+                                  alt=""
+                              /></a>
+                            </p>
+                            <div class="choose-size clearfix">
+                              <a href="javascript:void(0)">S</a>
+                              <a href="javascript:void(0)">M</a>
+                              <a href="javascript:void(0)">L</a>
+                            </div>
+                          </div>
+                          <div class="rechoose-item">
+                            <p>
+                              <a href=""
+                                ><img
+                                  src="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2022830090/3RC2022830090_s_1.jpg"
+                                  alt=""
+                              /></a>
+                            </p>
+                            <div class="choose-size clearfix">
+                              <a href="javascript:void(0)">S</a>
+                              <a href="javascript:void(0)">M</a>
+                              <a href="javascript:void(0)">L</a>
+                            </div>
+                          </div>
+                          <div class="rechoose-item">
+                            <p>
+                              <a href=""
+                                ><img
+                                  src="http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2022830420/3RC2022830420_s_1.jpg"
+                                  alt=""
+                              /></a>
+                            </p>
+
+                            <div class="choose-size clearfix">
+                              <a href="javascript:void(0)">S</a>
+                              <a href="javascript:void(0)">M</a>
+                              <a href="javascript:void(0)">L</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="choose-btn">
+                          <button class="yes">确定</button
+                          ><button class="no">取消</button>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <span>￥499.00</span>
+                    </td>
+                    <td>
+                      <div class="qty-num">
+                        <div class="prev"></div>
+                        <input type="text" value="1" />
+                        <div class="next"></div>
+                      </div>
+                      <a href="javascript:void(0)">收藏</a>&nbsp;/&nbsp;<a
+                        href="javascript:vodi(0)"
+                        >删除</a
+                      >
+                    </td>
+                    <td>
+                      <span>￥499.00</span>
+                    </td>
+                  </tr> -->
+                </tbody>
+              </table>
+            </div>
+            <div class="page-num">1</div>
+            <div class="order-total">
+              <div class="total-action">
+                <label for=""><input type="checkbox" />全选</label>
+                <a href="javascript:void(0)" id="shanchuyixuan">删除已选</a>
+              </div>
+              <div class="total-sum">
+                <p>
+                  已选：<span class="choosenumber">0</span>件 <br />
+                  总计金额（不含运费）：￥<span class="total-price">0.00</span>
+                </p>
+                <button type="button">马上结算</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-inner">
+        <p>
+          <a href="javascript:void(0)">隐私申明</a
+          ><a href="javascript:void(0)">联系我们</a>
+        </p>
+        <p>
+          Copyright @ 2010-2020 广州赫基信息科技有限公司版权所有
+          增值电信业务经营许可证<a href="#"
+            >粤B2-20100553 粤ICP备10229258-4号</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+          $(".top-float-frame .gotop").css("display", "block");
+        } else {
+          $(".top-float-frame .gotop").css("display", "none");
+        }
+      });
+
+      $(".top-float-frame .gotop").click(function () {
+        $("html").animate({ scrollTop: "0" }, 500);
+      });
+
+      var product = [
+        {
+          productName: "英文标语印花短袖T恤",
+          productImg:
+            "http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2022830018/3RC2022830018_s_1.jpg",
+          articleNumber: "货号：3RC2022830018",
+          productSize: "白色/S",
+          unitPrice: 499,
+          productNumber: 1,
+          rechooseProduct: [
+            "http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2022830018/3RC2022830018_s_1.jpg",
+            "http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2022830090/3RC2022830090_s_1.jpg",
+            "http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2022830420/3RC2022830420_s_1.jpg",
+          ],
+        },
+        {
+          productName: "英文标语印花短袖T恤",
+          productImg:
+            "http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2022830420/3RC2022830420_s_1.jpg",
+          articleNumber: "货号：3RC2022830420",
+          productSize: "橙色/L",
+          unitPrice: 499,
+          productNumber: 1,
+          rechooseProduct: [
+            "http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2022830018/3RC2022830018_s_1.jpg",
+            "http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2022830090/3RC2022830090_s_1.jpg",
+            "http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2022830420/3RC2022830420_s_1.jpg",
+          ],
+        },
+        {
+          productName: "衬衣刺绣标语长袖衬衫",
+          productImg:
+            "http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2012590000/3RC2012590000_s_1.jpg",
+          articleNumber: "货号：3RC2012590000",
+          productSize: "漂白/M",
+          unitPrice: 699,
+          productNumber: 1,
+          rechooseProduct: [
+            "http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2012590000/3RC2012590000_s_1.jpg",
+          ],
+        },
+        {
+          productName: "宽松连帽短袖风衣外套",
+          productImg:
+            "http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_s_1.jpg",
+          articleNumber: "货号：3RC2092100510",
+          productSize: "绿色/M",
+          unitPrice: 509,
+          productNumber: 1,
+          rechooseProduct: [
+            "http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100010/3RC2092100010_s_1.jpg",
+            "http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2092100510/3RC2092100510_s_1.jpg",
+          ],
+        },
+        {
+          productName: "棉质胶印人物短袖T恤",
+          productImg:
+            "http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2021130770/3RC2021130770_s_1.jpg",
+          articleNumber: "货号：3RC2021130770",
+          productSize: "粉紫/M",
+          unitPrice: 299,
+          productNumber: 1,
+          rechooseProduct: [
+            "http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2021130090/3RC2021130090_s_1.jpg",
+            "http://img1.ochirly.com.cn/wcsstore/TrendyCatalogAssetStore/images/trendy/trendiano/2020/b/3RC2021130770/3RC2021130770_s_1.jpg",
+          ],
+        },
+      ];
+      for (var i = 0; i < product.length; i++) {
+        var tr = $("<tr>");
+        tr.html(`<td><input type="checkbox" /></td>
+           <td><a href=""><img src='${product[i].productImg}'
+        alt=""/></a></td>
+                    <td>
+                      <div class="pro-information">
+                        <p>TRENDIANO</p>
+                        <p>
+                          <a href="">${product[i].productName}</a>
+                        </p>
+                        <p>${product[i].articleNumber}</p>
+                      </div>
+                    </td>
+                    <td class="pro-size">
+                      <a class="size" href="javascript:void(0)">${product[i].productSize}</a>
+                      <div class="size-box">
+                        <h3>选择颜色及尺码</h3>
+                        <div class="rechoose-area clearfix">
+                        </div>
+                        <div class="choose-btn">
+                          <button class="yes">确定</button
+                          ><button class="no">取消</button>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="unitprice"></span>
+                    </td>
+                    <td>
+                      <div class="qty-num">
+                        <div class="prev"></div>
+                        <input type="text" value="1" />
+                        <div class="next"></div>
+                      </div>
+                      <a href="javascript:void(0)">收藏</a>&nbsp;/&nbsp;<a
+                        href="javascript:void(0)"
+                        >删除</a
+                      >
+                    </td>
+                    <td>
+                      <span class="xiaoji"></span>
+                    </td>`);
+        for (var j = 0; j < product[i].rechooseProduct.length; j++) {
+          var rechooseItem = $('<div class="rechoose-item">').html(`
+                            <p>
+                              <a href=""><img src="${product[i].rechooseProduct[j]}" alt=""></a>
+                            </p>
+                            <div class="choose-size clearfix">
+                              <a href="javascript:void(0)">S</a>
+                              <a href="javascript:void(0)">M</a>
+                              <a href="javascript:void(0)">L</a>
+                            </div>
+                          `);
+          tr.find(".rechoose-area").append(rechooseItem);
+        }
+        tr.find(".rechoose-area").width(
+          200 * product[i].rechooseProduct.length
+        );
+        var unitprice = product[i].unitPrice.toFixed(2);
+        var xiaoji = (product[i].productNumber * product[i].unitPrice).toFixed(
+          2
+        );
+        tr.find(".unitprice").text("￥" + unitprice);
+        tr.find(".xiaoji").text("￥" + xiaoji);
+        $(".cart-content table tbody").append(tr);
+      }
+
+      $(".cart-content table a.size").click(function () {
+        if ($(this).siblings(".size-box").css("display") == "none") {
+          $(this).parents("tr").siblings().find(".size-box").fadeOut(700);
+          $(this).siblings(".size-box").fadeIn(700);
+        } else {
+          $(this).siblings(".size-box").fadeOut(700);
+        }
+      });
+      $(".size-box button").click(function () {
+        $(this).parents(".size-box").fadeOut(700);
+      });
+
+      $(".qty-num+a+a").click(function () {
+        $(this).parents("tr").find("input:checkbox").trigger("click");
+        $(this).parents("tr").html("");
+      });
+
+      $(".qty-num .prev").click(function () {
+        var index = $(this).parents("tr").index();
+        product[index].productNumber = product[index].productNumber + 1;
+        var xiaoji = (
+          product[index].productNumber * product[index].unitPrice
+        ).toFixed(2);
+        $(this).siblings("input").val(product[index].productNumber);
+        $(this)
+          .parents("tr")
+          .find(".xiaoji")
+          .text("￥" + xiaoji);
+        if ($(this).parents("tr").find("input:checkbox").is(":checked")) {
+          choosenumber = choosenumber + 1;
+          totalPrice = totalPrice + product[index].unitPrice;
+          $(".choosenumber").text(choosenumber);
+          $(".total-price").text(totalPrice.toFixed(2));
+        }
+      });
+      $(".qty-num .next").click(function () {
+        var index = $(this).parents("tr").index();
+        product[index].productNumber = product[index].productNumber - 1;
+        if (product[index].productNumber < 1) {
+          product[index].productNumber = 1;
+        } else {
+          var xiaoji = (
+            product[index].productNumber * product[index].unitPrice
+          ).toFixed(2);
+          $(this).siblings("input").val(product[index].productNumber);
+          $(this)
+            .parents("tr")
+            .find(".xiaoji")
+            .text("￥" + xiaoji);
+          if ($(this).parents("tr").find("input:checkbox").is(":checked")) {
+            choosenumber = choosenumber - 1;
+            totalPrice = totalPrice - product[index].unitPrice;
+            $(".choosenumber").text(choosenumber);
+            $(".total-price").text(totalPrice.toFixed(2));
+          }
+        }
+      });
+
+      var choosenumber = 0;
+      var totalPrice = 0;
+      $(".total-action input:checkbox").change(function () {
+        if ($(this).is(":checked")) {
+          choosenumber = 0;
+          totalPrice = 0;
+          $("section table tr input:checkbox").prop("checked", true);
+          for (var i = 0; i < $("section table tbody tr").length; i++) {
+            choosenumber =
+              choosenumber +
+              $("section table tbody tr").eq(i).find(".qty-num input").val() *
+                1;
+            totalPrice =
+              totalPrice +
+              $("section table tbody tr")
+                .eq(i)
+                .find(".xiaoji")
+                .text()
+                .substr(1) *
+                1;
+          }
+        } else {
+          choosenumber = 0;
+          totalPrice = 0;
+          $("section table tr input:checkbox").prop("checked", false);
+        }
+        $(".choosenumber").text(choosenumber);
+        $(".total-price").text(totalPrice.toFixed(2));
+      });
+      $(".total-action input:checkbox").trigger("click");
+
+      $("section table tr input:checkbox").click(function () {
+        if ($(this).is(":checked")) {
+          choosenumber =
+            choosenumber + product[$(this).parents("tr").index()].productNumber;
+          totalPrice =
+            totalPrice +
+            $(this).parents("tr").find(".xiaoji").text().substr(1) * 1;
+        } else {
+          choosenumber =
+            choosenumber - product[$(this).parents("tr").index()].productNumber;
+          totalPrice =
+            totalPrice -
+            $(this).parents("tr").find(".xiaoji").text().substr(1) * 1;
+        }
+        $(".choosenumber").text(choosenumber);
+        $(".total-price").text(totalPrice.toFixed(2));
+        var quanxuan = true;
+        for (var i = 0; i < $("section table tbody tr").length; i++) {
+          if ($("section table tbody tr").eq(i).html() == "") {
+            continue;
+          } else if (
+            !$("section table tbody tr")
+              .eq(i)
+              .find("input:checkbox")
+              .is(":checked")
+          ) {
+            quanxuan = false;
+          }
+        }
+        $(".total-action input:checkbox").prop("checked", quanxuan);
+      });
+
+      $(".total-action a#shanchuyixuan").click(function () {
+        var choosenumber = 0;
+        for (var i = 0; i < $("section table tbody tr").length; i++) {
+          if (
+            $("section table tbody tr")
+              .eq(i)
+              .find("input:checkbox")
+              .is(":checked")
+          ) {
+            $("section table tbody tr")
+              .eq(i)
+              .find("input:checkbox")
+              .trigger("click");
+            choosenumber = choosenumber + 1;
+            $("section table tbody tr").eq(i).html("");
+          }
+        }
+        if (choosenumber == 0) {
+          $(".nochooseproduct").css("display", "block");
+        }
+      });
+
+      $(".nochooseproduct button").click(function () {
+        $(this).parents(".nochooseproduct").css("display", "none");
+      });
+    </script>
+  </body>
+</html>

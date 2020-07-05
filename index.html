@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/clearfloat.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <style>
+      .top-float-frame {
+        width: 40px;
+        position: fixed;
+        right: 35px;
+        bottom: 0;
+      }
+      .top-float-frame .gotop {
+        display: none;
+        box-sizing: content-box;
+        width: 34px;
+        height: 30px;
+        background-color: #1a1a1a;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 3px;
+        font-family: Times New Roman;
+        cursor: pointer;
+        color: #fff;
+        text-align: center;
+      }
+      .top-float-frame .gotop:hover {
+        background-color: #000;
+      }
+      .top-float-frame a {
+        line-height: 16px;
+        padding: 3px;
+        font-family: Times New Roman;
+        background: #c9a063;
+        display: block;
+        cursor: pointer;
+        font-family: arial;
+        text-align: center;
+        color: #fff;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <div class="container">
+          <div class="row menu">
+            <div class="col-lg-8"></div>
+            <div class="col-lg-4">
+              <div class="top-link-box clearfix">
+                <span class="paramLogin">
+                  <a href="login.html">登录</a><a href="">注册</a>
+                </span>
+                <span class="my">
+                  <a href="">我的账户</a>
+                  <a href="">我的收藏</a>
+                  <a href="shopping-car.html">购物袋[0]</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="row top-mid">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2">
+              <h1 class="logo">
+                <a href=""></a>
+              </h1>
+            </div>
+            <div class="col-lg-5">
+              <div class="search clearfix">
+                <button></button
+                ><input type="text" value="搜索您感兴趣的内容" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="clearfix">
+                <li>
+                  <a href="">首页</a>
+                </li>
+                <li>
+                  <a href="">品牌动向</a>
+                </li>
+                <li>
+                  <a href="">新品咨询</a>
+                </li>
+                <li>
+                  <a href="">春夏大减价<span></span></a>
+                  <div class="sub-menu">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="sub-menu-cont clearfix">
+                            <h3>BIG SALE</h3>
+                            <span>
+                              <a href="">5.29主推款</a>
+                              <a href="">6.11主推款</a>
+                              <a href="">7折专区</a>
+                              <a href="">8折专区</a>
+                            </span>
+                            <span><a href="">9折专区</a></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">到店新品<span></span></a>
+                  <div class="sub-menu">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="sub-menu-cont clearfix">
+                            <h3>NEW IN</h3>
+                            <span>
+                              <a href="">5月14号到店</a>
+                              <a href="">4月30号到店</a>
+                              <a href="">4月16号到店</a>
+                              <a href="">全部新品</a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">跨界合作<span></span></a>
+                  <div class="sub-menu">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="sub-menu-cont clearfix">
+                            <h3>IP</h3>
+                            <span>
+                              <a href="">侏儒兔系列</a>
+                              <a href="">狮子王联名款</a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">特惠专区<span></span></a>
+                  <div class="sub-menu">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="sub-menu-cont clearfix">
+                            <h3>VIP SALE</h3>
+                            <span>
+                              <a href="">2件9折 3件8折</a>
+                              <a href="">秒杀专区</a>
+                              <a href="">新品秒杀</a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">服装<span></span></a>
+                  <div class="sub-menu">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="sub-menu-cont clearfix">
+                            <h3>NEW IN_SHANG</h3>
+                            <span>
+                              <a href="">T恤/POLO</a>
+                              <a href="">衬衫</a>
+                              <a href="">卫衣</a>
+                              <a href="">夹克</a>
+                            </span>
+                            <span>
+                              <a href="">裤装</a>
+                              <a href="">风衣</a>
+                              <a href="">针织衫</a>
+                              <a href="">皮衣</a>
+                            </span>
+                            <span>
+                              <a href="">羽绒服</a>
+                              <a href="">棉衣</a>
+                              <a href="">毛呢大衣</a>
+                              <a href="">西服</a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">鞋/配饰<span></span></a>
+                  <div class="sub-menu">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="sub-menu-cont clearfix">
+                            <h3>SHOES</h3>
+                            <span>
+                              <a href="">休闲鞋</a>
+                              <a href="">凉鞋/拖鞋</a>
+                              <a href="">包包</a>
+                              <a href="">帽</a>
+                            </span>
+                            <span>
+                              <a href="">袜</a>
+                              <a href="">其他配饰</a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><span>客服营业时间 : 9:00-18:00</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="article-list-box">
+            <div class="col-lg-12">
+              <div class="link-box">
+                <a href="">
+                  <img
+                    src="http://img2.trendiano.com/material/2020/06/08/20200608153952065.jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="link-box">
+                <a href="">
+                  <img
+                    src="http://img2.trendiano.com/material/2020/04/10/20200410171125501.jpg"
+                    alt=""
+                  />
+                  <span>4月来了，帅气衬衫正当时！</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="link-box">
+                <a href="">
+                  <img
+                    src="http://img2.trendiano.com/material/2020/04/10/20200410171124896.jpg"
+                    alt=""
+                  />
+                  <span>相信我,「细节」才是男人的魅力宝藏</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="link-box">
+                <a href="">
+                  <img
+                    src="http://img2.trendiano.com/material/2020/04/10/20200410171124857.jpg"
+                    alt=""
+                  />
+                  <span>潮流战「疫」，口罩不碍帅气</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="link-box">
+                <a href="">
+                  <img
+                    src="http://img2.trendiano.com/material/2020/04/10/20200410171124845.jpg"
+                    alt=""
+                  />
+                  <span>春已至，相信我，该为出门做打算了！</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="more">
+                <a href="">更多>></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="product">
+            <div class="col-lg-12">
+              <h2><span>Product</span>产品</h2>
+            </div>
+            <div class="col-lg-2">
+              <div class="product-box">
+                <a href="">
+                  <img
+                    src="http://img2.trendiano.com/material/2019/04/10/20190410211330828.png"
+                    alt=""
+                  />
+                  <span>T恤</span></a
+                >
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="product-box">
+                <a href="">
+                  <img
+                    src="http://img2.trendiano.com/material/2019/04/10/20190410211330836.png"
+                    alt=""
+                  />
+                  <span>衬衫</span></a
+                >
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="product-box">
+                <a href="">
+                  <img
+                    src="http://img2.trendiano.com/material/2019/04/10/20190410211331213.png"
+                    alt=""
+                  />
+                  <span>卫衣</span></a
+                >
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="product-box">
+                <a href="">
+                  <img
+                    src="http://img2.trendiano.com/material/2019/04/10/20190410211330844.png"
+                    alt=""
+                  />
+                  <span>风衣</span></a
+                >
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="product-box">
+                <a href="">
+                  <img
+                    src="http://img2.trendiano.com/material/2019/04/10/20190410211331192.png"
+                    alt=""
+                  />
+                  <span>裤装</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="brand article-list-box">
+            <div class="col-lg-12">
+              <h2><span>Brand News</span> 品牌动向</h2>
+            </div>
+            <div class="col-lg-4">
+              <div class="link-box">
+                <a href=""
+                  ><img
+                    src="http://img2.trendiano.com/material/2019/10/15/20191015102841010.jpg"
+                    alt=""
+                  /><span>TRENDIANO 冬季大片丨高级感归于日常</span></a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="link-box">
+                <a href=""
+                  ><img
+                    src="http://img2.trendiano.com/material/2019/08/13/20190813192452239.jpg"
+                    alt=""
+                  /><span>2019 FALL丨TRENDIANO×LUCKY BLUE SMITH 回归</span></a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="link-box">
+                <a href=""
+                  ><img
+                    src="http://img2.trendiano.com/material/2018/12/21/20181221141533179.jpg"
+                    alt=""
+                  /><span>丨每月一星·吴希泽丨</span></a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="link-box">
+                <a href=""
+                  ><img
+                    src="http://img2.trendiano.com/material/2018/11/15/20181115145919691.jpg"
+                    alt=""
+                  /><span>F4 · 青年方向感</span></a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="link-box">
+                <a href=""
+                  ><img
+                    src="http://img2.trendiano.com/material/2018/07/05/20180705143120602.jpg"
+                    alt=""
+                  /><span>F4来了！ 史上首次代言人揭秘</span></a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="link-box">
+                <a href=""
+                  ><img
+                    src="http://img2.trendiano.com/material/2018/05/31/20180531121354742.jpg"
+                    alt=""
+                  /><span>偶像练习生×TRENDIANO丨逆风成长，为梦而生</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="new-in article-list-box">
+            <div class="col-lg-12">
+              <h2><span>New In</span> 新品资讯</h2>
+            </div>
+            <div class="col-lg-3">
+              <div class="link-box">
+                <a href="">
+                  <img
+                    src="http://img2.trendiano.com/material/2020/04/10/20200410171125501.jpg"
+                    alt=""
+                  />
+                  <span>4月来了，帅气衬衫正当时！</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="link-box">
+                <a href="">
+                  <img
+                    src="http://img2.trendiano.com/material/2020/04/10/20200410171124896.jpg"
+                    alt=""
+                  />
+                  <span>相信我,「细节」才是男人的魅力宝藏</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="link-box">
+                <a href="">
+                  <img
+                    src="http://img2.trendiano.com/material/2020/04/10/20200410171124857.jpg"
+                    alt=""
+                  />
+                  <span>潮流战「疫」，口罩不碍帅气</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="link-box">
+                <a href="">
+                  <img
+                    src="http://img2.trendiano.com/material/2020/04/10/20200410171124845.jpg"
+                    alt=""
+                  />
+                  <span>春已至，相信我，该为出门做打算了！</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="more">
+                <a href="">更多>></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="foot-part haverightline">
+                <h3>活动日历</h3>
+                <div class="monthdate">
+                  JUNE
+                  <span>18</span>
+                </div>
+                <img
+                  src="http://img2.trendiano.com/material/2018/05/08/20180508115202738.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="foot-part haverightline havepaddingleft">
+                <h3>官方微信</h3>
+                <div class="weixin-code">
+                  <img
+                    src="http://img2.trendiano.com/rs/fiveplus/v1/res/obj/2015/02/28/weixin_code.png"
+                    alt=""
+                  />
+                </div>
+                <h3>关注微博</h3>
+                <a href="">关注@TRENDIANO官方微博</a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="foot-part havepaddingleft haverightline">
+                <h3>品牌资讯</h3>
+                <a href="">
+                  <img
+                    src="http://img2.trendiano.com/material/2020/03/05/20200305181145176.jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="foot-part havepaddingleft">
+                <h3>ABOUT US</h3>
+                <p><a href="">购物流程</a><a href="">支付方式</a></p>
+                <p><a href="">退货流程</a><a href="">配送说明</a></p>
+                <p><a href="">关于我们</a></p>
+                <div class="help">
+                  <div class="service">联系客服</div>
+                  <div class="phone">客服400-880-0086</div>
+                  <div class="return">7天无条件退货</div>
+                </div>
+                <div class="pay-methods clearfix">
+                  <span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="footer-bottom-inner">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-8">
+                <div class="copyright">
+                  <div class="copyright-slinks">
+                    <a href="">隐私申明</a><a href="">联系我们</a>
+                  </div>
+                  <div class="copyright-text">
+                    <p>
+                      Copyright @ 2010-2020 广州赫基信息科技有限公司版权所有
+                    </p>
+                    <a href="">粤ICP备10229258号-4</a>
+                    <a href=""
+                      ><img
+                        src="http://img2.trendiano.com/material/2016/10/31/20161031164826771.png"
+                        alt=""
+                      />粤公网安备44010602001993号</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="top-float-frame">
+      <div class="gotop">TOP</div>
+      <a href="index.html" class="gohome">返回首页</a>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+      $(".search input").focus(function () {
+        console.log("1");
+        if ($(this).val() == "搜索您感兴趣的内容") {
+          $(this).val("");
+        }
+      });
+      $(".search input").blur(function () {
+        if ($(this).val() == "") {
+          $(this).val("搜索您感兴趣的内容");
+        }
+      });
+
+      $(".nav ul li").mouseenter(function () {
+        $(this).find("a span").css("display", "block");
+        $(this).find(".sub-menu").css("display", "block");
+        $(this).find(".sub-menu").animate({ opacity: "1" }, 300);
+      });
+      $(".nav ul li").mouseleave(function () {
+        var that = $(this);
+        $(this).find("a span").css("display", "none");
+        $(this).find(".sub-menu").stop().animate({ opacity: "0" }, 200);
+        setTimeout(function () {
+          that.find(".sub-menu").css("display", "none");
+        }, 200);
+      });
+
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+          $(".top-float-frame .gotop").css("display", "block");
+        } else {
+          $(".top-float-frame .gotop").css("display", "none");
+        }
+        if ($(this).scrollTop() >= 100) {
+          $("header .nav").css({
+            position: "fixed",
+            top: "0",
+            "z-index": "1000",
+            "box-shadow": "0 0 8px rgb(203, 203, 203)",
+          });
+        } else {
+          $("header .nav").css({
+            position: "relative",
+            "box-shadow": "none",
+          });
+        }
+      });
+
+      $(".top-float-frame .gotop").click(function () {
+        $("html").animate({ scrollTop: "0" }, 500);
+      });
+    </script>
+  </body>
+</html>

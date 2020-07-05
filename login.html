@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/clearfloat.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <div class="login">
+      <a href="" class="gohome"></a>
+      <div class="login-wrap">
+        <h3>欢迎回来！请登录</h3>
+        <form action="">
+          <p class="clearfix">
+            <input type="text" placeholder="手机号码" class="phone" />
+          </p>
+          <p class="clearfix">
+            <input type="text" placeholder="验证码" class="kaptchaCode" />
+            <img
+              src="https://passport.trendiano.com/kaptcha.jpg?sessionId=aaajUZgFD3xjZdrUs8Ckx"
+              alt=""
+            />
+          </p>
+          <p class="clearfix">
+            <input type="text" placeholder="手机动态码" />
+            <button type="button" class="getdtm">获取动态码</button>
+          </p>
+          <div class="error">
+            <div class="phone_error">手机号码格式不正确</div>
+            <div class="kaptchaCode_error">请填写正确的验证码</div>
+          </div>
+          <button class="denglu" type="button">登录</button>
+        </form>
+        <p class="align_right">
+          <a href="">我要注册</a>&nbsp;&nbsp;<a href="">忘记密码</a>
+        </p>
+      </div>
+      <div class="phone-error">
+        <div class="phone-error-wrap">
+          <h3>温馨提示</h3>
+          <p>手机号码格式不正确</p>
+          <button>确定</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+      $(".getdtm").click(function () {
+        if (!/1[3456789]\d{9}$/.test($(".phone").val())) {
+          $(".phone-error").css("display", "block");
+        }
+      });
+      $(".phone-error-wrap button").click(function () {
+        $(".phone-error").css("display", "none");
+      });
+      $(".login-wrap .denglu").click(function () {
+        $(".login-wrap form p input:text").css("border-color", "#ffb7c8");
+        $(".kaptchaCode_error").css("display", "block");
+        if (/1[3456789]\d{9}$/.test($(".phone").val())) {
+          $(".phone").css("border-color", "#f0f0ef");
+          $(".phone_error").css("display", "none");
+        } else {
+          $(".phone_error").css("display", "block");
+        }
+      });
+    </script>
+  </body>
+</html>
